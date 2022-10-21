@@ -1,8 +1,34 @@
 let qI = 0;
 let clockId;
-let time = 3;
+let time = 60;
 const main = document.querySelector('main');
-
+const questions = [
+    {
+        Q: 'Question 1',
+        A: ['a','b','c','d'],
+        C: 'c'
+    },
+    {
+        Q: 'Question 2',
+        A: ['a','b','c','d'],
+        C: 'c'
+    },
+    {
+        Q: 'Question 3',
+        A: ['a','b','c','d'],
+        C: 'c'
+    },
+    {
+        Q: 'Question 4',
+        A: ['a','b','c','d'],
+        C: 'c'
+    },
+    {
+        Q: 'Question 5',
+        A: ['a','b','c','d'],
+        C: 'c'
+    }
+]
 const clock = () => {
     time--;
     if(time<1) {
@@ -13,13 +39,12 @@ const clock = () => {
 };
 
 const init = () => {
-    const {Q,A,C} = questions[qI];
     clockId = setInterval(clock,1000);
-    main.innerHTML = `<h1>${Q}</h1>`;
+    document.getElementById("questions").textContent=questions[qI].Q
 
-    A.forEach(ans => {
-        main.innerHTML += `<button>${ans}</button>`;
-    });
+     for(var i = 0;i<A.length;i++){
+        
+     }
 };
 
 document.querySelector('.start').addEventListener('click',init);
