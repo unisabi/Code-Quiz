@@ -4,29 +4,29 @@ let time = 60;
 const main = document.querySelector('main');
 const questions = [
     {
-        Q: 'Question 1',
-        A: ['a','b','c','d'],
-        C: 'c'
+        Q: 'Commonly used data types NO NOT include:',
+        A: ['1. strings','2. booleans','3. alerts','4. numbers'],
+        C: '3. alerts'
     },
     {
-        Q: 'Question 2',
-        A: ['a','b','c','d'],
-        C: 'c'
+        Q: 'The condition in an if/else statement is enclosed within ____.',
+        A: ['1. quotes','2. curly brackets','3. parenthesis','4. square brackets'],
+        C: '2. curly brackets'
     },
     {
-        Q: 'Question 3',
-        A: ['a','b','c','d'],
-        C: 'c'
+        Q: 'Arrays in Javascript can be used to store ___.',
+        A: ['1. numbers and strings','2. other arrays','3. booleans','4. all of the above'],
+        C: '4. all of the above'
     },
     {
-        Q: 'Question 4',
-        A: ['a','b','c','d'],
-        C: 'c'
+        Q: 'String values must be enclosed with ____ when being assigned to variables.',
+        A: ['1. commas','2. curly brackets','3. quotes','4. parenthesis'],
+        C: '3. quotes'
     },
     {
-        Q: 'Question 5',
-        A: ['a','b','c','d'],
-        C: 'c'
+        Q: 'A very useful tool used during development and debugging for printing content to the debugger is:',
+        A: ['1. Javascript','2. terminal/bash','3. for loops','4. console log'],
+        C: '1. Javascript'
     }
 ]
 const clock = () => {
@@ -43,7 +43,7 @@ const init = () => {
     document.getElementById("questions").textContent=questions[qI].Q
 
      for(var i = 0;i<A.length;i++){
-        
+
      }
 };
 
