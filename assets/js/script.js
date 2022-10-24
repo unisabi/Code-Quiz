@@ -39,12 +39,33 @@ const clock = () => {
 };
 
 const init = () => {
+    // start Timer
     clockId = setInterval(clock,1000);
-    document.getElementById("questions").textContent=questions[qI].Q
-
-     for(var i = 0;i<A.length;i++){
-
-     }
+    // hide instruction section
+    // show questions section
+    // call displayQuestion Func to display questions
+    displayQuestion();
 };
+
+function displayQuestion() {
+    // to display question on questions element.
+    document.getElementById('questions').textContent = questions[qI].Q;
+    for(var i = 0; i < A.length; i++){
+        // Create button element
+        // Assign a Question value into the button element.
+        // assign evenListener into each button or delegate event listener <== assign a event function into answers button.
+        // append the button into buttons <div id="buttons"></div>
+    }
+}
+
+// decalre eventListener func. for answers button
+function onclickAnswers(event){
+    // inside event.target, it has anwser button element.
+    // compare the answer that user clicked with correct anwer using "if statement"
+    // if true, do something, else do something
+    // increase qI++
+    // call displayQuestion() function. then you can display next question.
+
+}
 
 document.querySelector('.start').addEventListener('click',init);

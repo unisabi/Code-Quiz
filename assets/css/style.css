@@ -19,13 +19,18 @@ nav button {
 main {
     text-align: center;
     margin: 10vh;
-    height: 40vh;
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     border: 2px solid black;
 }
 
+.display-questions{
+    display: none;
+}
+.high-scores{
+    display:none;
+}
 button {
     background:purple;
     color: white;
