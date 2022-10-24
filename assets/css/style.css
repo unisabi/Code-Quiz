@@ -24,12 +24,14 @@ main {
     border-radius: 8px;
     border: 2px solid black;
 }
-
+.start-page{
+    display: none;
+}
 .display-questions{
     display: none;
 }
 .high-scores{
-    display:none;
+    display: none;
 }
 button {
     background:purple;
