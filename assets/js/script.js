@@ -44,22 +44,23 @@ const init = () => {
     // hide instruction section
     document.getElementById("start-page").style.display = "none";
     // show questions section
-    document.getElementById("display-questions").style.display = "block"
+    document.getElementById("display-questions").style.display = "block";
     // call displayQuestion Func to display questions
     displayQuestion();
 };
 
 function displayQuestion() {
     // to display question on questions element.
-    document.getElementById('questions').textContent = questions[qI].Q;
-    for(var i = 0; i < A.length; i++){
+    // document.getElementById('questions').textContent = questions[qI].Q;
+    // for(var i = 0; i < A.length; i++){
         // Create button element
-        document.createElement('button')
+        // document.createElement('button')
         // Assign a Question value into the button element.
+        var questions
         // assign evenListener into each button or delegate event listener <== assign a event function into answers button.
         // append the button into buttons <div id="buttons"></div>
     }
-}
+// }
 
 // decalre eventListener func. for answers button
 function onclickAnswers(event){

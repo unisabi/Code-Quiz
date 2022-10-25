@@ -27,9 +27,9 @@ main {
 .start-page{
     display: none;
 }
-.display-questions{
-    display: none;
-}
+/* .display-questions{ */
+    /* display: none; */
+/* } */
 .high-scores{
     display: none;
 }
